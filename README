@@ -1,0 +1,10 @@
+1. ping gcr.io to make sure that google images is accessible.
+2. change init_node.sh accordingly.
+3. make sure that hostnames are correctly mapped.
+4. execute init_node.sh on master.
+5. execute init_master.sh to init master.
+6. execute init_node.sh on every node.
+7. join master on the nodes.
+8. set up network.
+9. set up dashboard.
+10. set up monitor  
