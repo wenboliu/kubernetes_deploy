@@ -1,4 +1,9 @@
 #!/bin/sh
+echo "net.bridge.bridge-nf-call-ip6tables = 1" > k8s.conf
+echo "net.bridge.bridge-nf-call-iptables = 1" >> k8s.conf
+sudo mv k8s.conf /etc/sysctl.d/
+sudo sysctl -p
+sudo sysctl -f
 cat <<EOF > kubernetes.repo
 [kubernetes]
 name=Kubernetes
